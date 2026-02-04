@@ -20,6 +20,8 @@ Essenciais - Página individual para cada notícia
 Futuras    - Administrador (adicionar e remover notícias)
              Navegar entre catálogo de noticias (Páginas 1,2,3...)
              Busca por categoria de notícia
+             Tornar HTTPS
+             Melhorar a responsividade do front-end
 
 - TECNOLOGIAS USADAS
 
