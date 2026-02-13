@@ -1,82 +1,119 @@
- /* Reset básico */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-        }
+body {
+font-family: Arial, sans-serif;
+background-color: #f2f2f2;
+}
 
-        /* Cabeçalho */
-        header {
-            background-color: #1e1e1e;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+/* Cabeçalho */
+header {
+background-color: #1e1e1e;
+color: white;
+padding: 20px;
+text-align: center;
+}
 
-        header h1 {
-            padding: 10px;
-        }
+header h1 {
+padding: 10px;
+}
 
-        
-        h1 {
-            padding: 10px;
-        }
 
-        p {
-            padding: 10px;
-        }
+h1 {
+padding: 10px;
+}
 
-        /* Menu */
-        nav {
-            background-color: #333;
-            padding: 10px;
-            text-align: center;
-        }
+p {
+padding: 10px;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-            font-size: 14px;
-        }
+/* Menu */
+nav {
+background-color: #333;
+padding: 10px;
+text-align: center;
+}
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+nav a {
+color: white;
+text-decoration: none;
+margin: 0 10px;
+font-size: 14px;
+}
 
-        /* Conteúdo principal */
-        main {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 0 0px;
-        }
+nav a:hover {
+text-decoration: underline;
+}
 
-        /* Área de artigos */
-        .articles {
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
+/* Conteúdo principal */
+main {
+max-width: 800px;
+margin: 30px auto;
+padding: 0 0px;
+}
 
-        /* Card de artigo (vazio) */
-        .article-card {
-            margin-top: 20px;
-            background-color: white;
-            min-height: 100px;
-            border-radius: 6px;
-            border: 1px solid #ddd;
-            padding: 10px;
-        }
+/* Link do card */
+.article-link {
+text-decoration: none;
+color: inherit;
+display: block;
+}
 
-        /* Rodapé */
-        footer {
-            background-color: #1e1e1e;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 40px;
-        }
+/* Card do artigo */
+.article-card {
+background-color: #ffffff;
+border-radius: 10px;
+border: 1px solid #e0e0e0;
+padding: 20px;
+margin-top: 20px;
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+cursor: pointer;
+}
+
+/* Hover elegante */
+.article-card:hover {
+transform: translateY(-4px);
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Título do artigo */
+.article-card h2 {
+font-size: 18px;
+color: #1e1e1e;
+margin-bottom: 10px;
+}
+
+/* Descrição */
+.article-card p {
+font-size: 14px;
+color: #555;
+line-height: 1.6;
+}
+
+/* "Ler mais" */
+.article-card .read-more {
+display: inline-block;
+margin-top: 12px;
+font-size: 13px;
+font-weight: bold;
+color: #0077ff;
+}
+
+.articles {
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 20px;
+}
+
+
+
+/* Rodapé */
+footer {
+background-color: #1e1e1e;
+color: white;
+text-align: center;
+padding: 15px;
+margin-top: 40px;
+}
